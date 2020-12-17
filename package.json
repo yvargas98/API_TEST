@@ -1,25 +1,30 @@
 {
   "name": "api_test",
   "version": "1.0.0",
-  "description": "full stack developer test ",
-  "main": "/src/index.js",
-  "compilerOptions": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "nodemon src/index.ts --exec ts-node",
-    "start:prod": "node dist/index.js"
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvargas98/API_TEST.git"
   },
   "author": "Yasmin Vargas",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.6",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+  "bugs": {
+    "url": "https://github.com/yvargas98/API_TEST/issues"
   },
-  "devDependencies": {},
-  "engines": {
-    "node": "10.x"
-  }
+  "homepage": "https://github.com/yvargas98/API_TEST#readme",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "@types/mocha": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1"
+  },
+  "engines": { "node": "v12.18.4" }
 }
