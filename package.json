@@ -5,8 +5,9 @@
   "main": "/src/index.js",
   "compilerOptions": {},
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon -x ts-node src/index.ts"
+    "build": "tsc",
+    "start": "nodemon src/index.ts --exec ts-node",
+    "start:prod": "node dist/index.js"
   },
   "author": "Yasmin Vargas",
   "license": "ISC",
