@@ -4,7 +4,7 @@
   "description": "full stack developer test ",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts --exec ts-node"
+    "start": "node src/index.ts --exec ts-node"
   },
   "author": "Yasmin Vargas",
   "license": "ISC",
