@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "full stack developer test ",
   "main": "index.js",
-  "compilerOptions" : {
-    
-  },
+  "compilerOptions": {},
   "scripts": {
-      "start": "ts-node src/index.ts",
-      "dev": "nodemon -x ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon -x ts-node src/index.ts"
   },
   "author": "Yasmin Vargas",
   "license": "ISC",
