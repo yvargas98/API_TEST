@@ -2,7 +2,7 @@
   "name": "api_test",
   "version": "1.0.0",
   "description": "full stack developer test ",
-  "main": "index.js",
+  "main": "/src/index.js",
   "compilerOptions": {},
   "scripts": {
     "start": "ts-node src/index.ts",
