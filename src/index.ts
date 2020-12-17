@@ -1,6 +1,6 @@
-const express = require('express');
+import express = require('express');
 const app = express();
-const PORT : string|number = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.use("*",(req: any, res: { send: (arg0: string) => void; }) =>{
     res.send("<h1>Welcome!</h1>");
