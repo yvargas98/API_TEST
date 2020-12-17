@@ -1,8 +1,8 @@
-import express, {Request, Response } from "express";
+const express = require('express');
 const app = express();
 const PORT : string|number = process.env.PORT || 5000;
 
-app.use("*",(req: Request, res: Response) =>{
+app.use("*",(req: any, res: { send: (arg0: string) => void; }) =>{
     res.send("<h1>Welcome!</h1>");
 });
 
